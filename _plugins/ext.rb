@@ -1,3 +1,4 @@
+require "json"
 require 'jekyll-assets'
 require 'bundler/setup'
 
@@ -7,4 +8,5 @@ if defined?(RailsAssets)
   RailsAssets.load_paths.each do |path|
     Sprockets.append_path path
   end
+
 end
