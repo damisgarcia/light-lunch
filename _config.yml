@@ -26,30 +26,27 @@ gems:
 assets:
   compress:
     css:
-      development: false
+      development: true
       production: true
     js:
-      development: false
+      development: true
       production: true
-  cache: .asset-cache
-  cdn: https://cdn.example.com
+  cache: false
+  cdn: false
   skip_baseurl_with_cdn: false
   skip_prefix_with_cdn: false
   prefix: "/assets"
-  autowrite: true
+  autowrite: false
   assets:
     - "*.png"
     - "bundle.css"
-  digest: true
+  digest: false
   sources:
-    - _assets/css
     - _assets/images
     - _assets/javascripts
     - _assets/stylesheets
-    - _assets/vendor
     - _assets/fonts
     - _assets/img
-    - _assets/js
   features:
     liquid: false
     automatic_img_size: true
