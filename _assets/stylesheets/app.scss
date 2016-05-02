@@ -2,11 +2,17 @@
 // @author: Damis Garcia
 //
 
+@import "bourbon";
+@import "bootstrap-sprockets";
 
+// Bootswatch Theme
+@import "bootswatch/slate/variables";
 
 @import "bootstrap";
 @import "flexboxgrid";
-@import "bourbon";
-@import "vars";
-@import "syntax-highlighting";
-@import "base";
+
+@import "bootswatch/slate/bootswatch";
+
+
+// Site
+@import "carousel";

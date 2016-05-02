@@ -1,14 +1,20 @@
 <footer class="site-footer">
   <div class="container">
     <div class="row bottom-xs">
-      <div class="col-md-3">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
+      <hr class="col-xs-12">
+      <!-- <div class="col-md-6">
+        <h2 class="footer-heading">{{ site.title }}</h2>
+        <p>{{ site.description }}</p>
+      </div> -->
+      <div class="col-md-12">
+        <ul class="list-unstyled">
+          <li>Contato</li>
           <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+          <li>Telefone: <a href="tel:{{ site.phone }}">{{ site.phone }}</a></li>
         </ul>
       </div>
-      <div class="col-md-3">
-        <ul class="social-media-list">
+      <!-- <div class="col-md-3">
+        <ul class="list-unstyled">
           {% if site.github_username %}
           <li>
             {% include icon-github.html username=site.github_username %}
@@ -21,11 +27,7 @@
           </li>
           {% endif %}
         </ul>
-      </div>
-      <div class="col-md-6">
-        <h2 class="footer-heading">{{ site.title }}</h2>
-        <p>{{ site.description }}</p>
-      </div>
+      </div> -->
     </div>
   </div>
 </footer>
