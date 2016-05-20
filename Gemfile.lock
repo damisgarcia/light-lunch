@@ -55,6 +55,7 @@ GEM
     rails-assets-bootswatch (3.3.6.1)
       rails-assets-bootstrap (~> 3.3.6)
     rails-assets-bourbon (4.2.6)
+    rails-assets-firebase (3.0.0)
     rails-assets-flexboxgrid (6.3.0)
     rails-assets-jquery (2.2.3)
     rb-fsevent (0.9.7)
@@ -84,6 +85,7 @@ DEPENDENCIES
   jekyll-coffeescript
   rails-assets-bootswatch (~> 3.3.6)!
   rails-assets-bourbon (= 4.2.6)!
+  rails-assets-firebase (= 3.0.0)!
   rails-assets-flexboxgrid (= 6.3.0)!
   rails-assets-jquery (= 2.2.3)!
   sass

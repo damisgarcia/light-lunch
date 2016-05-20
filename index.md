@@ -1,10 +1,10 @@
 ---
 layout: index
 ---
-
+<h1>{{'app.user' | angular}}</h1>
 <div class="home">
   <div class="jumbotron text-center">
-    <h1>Lorem Ipsum</h1>
+    <h1>Lorem Ipsums</h1>
     <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vivamus suscipit tortor eget felis porttitor volutpat.</p>
   </div>
 </div>
