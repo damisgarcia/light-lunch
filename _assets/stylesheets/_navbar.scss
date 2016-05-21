@@ -1,0 +1,20 @@
+dropdown-profile{
+  @include display(flex);
+  @include align-items(center);
+  @include justify-content(center);
+  float: left;
+  height: 50px;
+
+  .profile{
+    margin: 0px 8px;
+  }
+
+  .actions{
+    @include display(flex);
+    @include align-items(center);
+    @include justify-content(center);
+    .btn{
+      margin: 0px 5px;
+    }
+  }
+}

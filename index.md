@@ -1,7 +1,6 @@
 ---
 layout: index
 ---
-<h1>{{'app.user' | angular}}</h1>
 <div class="home">
   <div class="jumbotron text-center">
     <h1>Lorem Ipsums</h1>

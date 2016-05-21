@@ -1,0 +1,11 @@
+fading-circle-spinner{
+  .fading-circle-spinner{
+    width: 44px;
+    height: 44px;
+    div[class^="fading"]{
+      &::before{
+        background-color: #efefef;
+      }
+    }
+  }
+}

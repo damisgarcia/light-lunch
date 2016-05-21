@@ -4,4 +4,4 @@
 # @doc Projeto teste para entendimento do funcionamento da plataforma firebase da Google
 ###
 
-angular.module "lightLuchApp", []
+app = angular.module "lightLuchApp", ['angular-spinkit']

@@ -4,12 +4,13 @@
   {% include head.html %}
 
   <body ng-controller="AppCtrl as app">
-
     {% include header.html %}
 
-    {% include carousel.html %}
 
-    <div class="container">
+    <fading-circle-spinner ng-hide="app.loaded"></fading-circle-spinner>
+
+    <div class="container ng-hide" ng-show="app.loaded">
+      {% include carousel.html %}
       {{ content }}
     </div>
 

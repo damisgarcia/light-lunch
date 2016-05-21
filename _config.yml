@@ -35,7 +35,7 @@ assets:
     js:
       development: false
       production: true
-  debug: false
+  debug: true
   cache: .asset-cache
   cdn: false
   skip_baseurl_with_cdn: false
@@ -52,6 +52,7 @@ assets:
     - _assets/stylesheets
     - _assets/fonts
     - _assets/img
+    - _assets/templates
     - vendor
   features:
     liquid: false
