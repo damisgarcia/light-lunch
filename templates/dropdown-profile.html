@@ -5,12 +5,12 @@
     <span class="caret"></span>
   </a>
   <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-    <li><a href="#">View Profile</a></li>
-    <li><a href="#">Edit Account</a></li>
+    <li><a href="/me">View Profile</a></li>
+    <li><a href="/me">Edit Account</a></li>
     <li role="separator" class="divider"></li>
     <li><a href="#" ng-click="logout($event)">Logout</a></li>
   </ul>
 </div>
 <div class="actions ng-hide" ng-show="!model">
-  <a href="/sign_up/" class="btn btn-primary">Efetual Login / Criar Conta</a>
+  <a href="#!" ng-click="openForm()" class="btn btn-primary">Efetual Login / Criar Conta</a>
 </div>

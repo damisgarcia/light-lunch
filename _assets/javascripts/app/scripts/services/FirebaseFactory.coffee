@@ -4,10 +4,10 @@ FirebaseFactory = ->
   ###
 
   config =
-    apiKey:'AIzaSyC_EBV3t7Xvqrt4_vZxwxhLmzgwJlHizMY'
-    authDomain:'intergralfit.firebaseapp.com'
-    databaseURL:'https://intergralfit.firebaseio.com'
-    storageBucket:'intergralfit.appspot.com'
+    apiKey:'AIzaSyCONqfNXX-RGfLfapei-K2Yi8aK-KJrGDE'
+    authDomain:'project-6757960052769325295.firebaseapp.com'
+    databaseURL:'https://project-6757960052769325295.firebaseio.com'
+    storageBucket:'project-6757960052769325295.appspot.com'
 
   ###
   # @public

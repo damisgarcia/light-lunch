@@ -1,0 +1,12 @@
+.profile-container{
+  @extend .row;
+  .profile-media-user{
+    @extend .col-md-3;
+    img{
+      margin: auto;
+    }
+  }
+  .profile-content{
+    @extend .col-md-9;
+  }
+}

@@ -1,4 +1,4 @@
-dropdownProfile = (Connection)->
+dropdownProfile = (Connection, $uibModal)->
   restrict: 'E'
   scope:
     model: '='
@@ -7,6 +7,11 @@ dropdownProfile = (Connection)->
     scope.logout = (e)->
       e.preventDefault()
       Connection.logout()
+    scope.openForm = ->
+      $uibModal.open
+        animation: true
+        templateUrl: 'myModalContent.html'
+        controller: 'SessionCtrl as session'
 
-dropdownProfile.$inject = ['Connection']
+dropdownProfile.$inject = ['Connection', '$uibModal']
 angular.module('lightLuchApp').directive 'dropdownProfile', dropdownProfile

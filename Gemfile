@@ -14,6 +14,9 @@ gem "uglifier"
 gem 'bootstrap-sass', '~> 3.3.6'
 
 source 'https://rails-assets.org' do
+  gem 'rails-assets-angular-touch', '1.5.5'
+  gem 'rails-assets-angular-animate', '1.5.5'
+  gem 'rails-assets-angular-resource', '1.5.5'
   gem 'rails-assets-bootswatch', '~>3.3.6'
   gem 'rails-assets-bourbon', '4.2.6'
   gem 'rails-assets-jquery', '2.2.3'

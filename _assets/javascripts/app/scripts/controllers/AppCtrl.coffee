@@ -22,21 +22,16 @@ AppCtrl = ($firebaseObject, Connection, $GoogleAuthProvider, $timeout)->
   ###
   self = this
 
-  self.singin =
-    google: (e)->
-      e.preventDefault()
-      Connection.signInWithPopup $GoogleAuthProvider, authSuccess, authFail
-  #
-
   Connection.onAuthStateChanged (user)->
     if user?
+      console.log user
       $firebaseObject.extend(self, user: user)
     else
       $firebaseObject.extend(self, user: null)
-
   #...
+
   window.onload = ->
-    $timeout application_timeout, 600
+    $timeout application_timeout, 1300
 
   self
 

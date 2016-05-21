@@ -1,6 +1,9 @@
 ---
-layout: index
+layout: default
 ---
+
+{% include carousel.html %}
+
 <div class="home">
   <div class="jumbotron text-center">
     <h1>Lorem Ipsums</h1>
