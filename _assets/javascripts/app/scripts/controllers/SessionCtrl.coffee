@@ -2,13 +2,17 @@
 # @controller AppCtrl
 ###
 
-SessionCtrl = (Connection, $GoogleAuthProvider, $FacebookAuthProvider, $uibModalInstance)->
+SessionCtrl = (Connection, $GoogleAuthProvider, $FacebookAuthProvider, $uibModalInstance, $firebaseObject)->
   ###
   # @private
   ###
-  
-  authSuccess = (data)-> $uibModalInstance.dismiss("cancel")
-  authFail = (error)-> console.debug error
+
+  authSuccess = (data)->
+    $uibModalInstance.dismiss("cancel")
+
+  authFail = (error)->
+    $firebaseObject.extend(self, error_message: error.message)
+  #
 
   ###
   # @public
@@ -27,5 +31,5 @@ SessionCtrl = (Connection, $GoogleAuthProvider, $FacebookAuthProvider, $uibModal
   self
 
 
-SessionCtrl.$inject = ['Connection', '$GoogleAuthProvider', '$FacebookAuthProvider', '$uibModalInstance']
+SessionCtrl.$inject = ['Connection', '$GoogleAuthProvider', '$FacebookAuthProvider', '$uibModalInstance', '$firebaseObject']
 angular.module('lightLuchApp').controller 'SessionCtrl', SessionCtrl

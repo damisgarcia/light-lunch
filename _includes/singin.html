@@ -6,6 +6,13 @@
       <div class="singin-form">
         <button class="btn btn-danger btn-lg btn-block" ng-click="session.singin.google($event)">Sign with Google</button>
         <button class="btn btn-warning btn-lg btn-block" ng-click="session.singin.facebook($event)">Sign with Facebook</button>
+        <br>
+        <div class="alert alert-danger" ng-show="session.error_message">
+          <button type="button" class="close" ng-click="session.error_message=null;">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <p>{{"session.error_message" | angular}}</p>
+        </div>
       </div>
     </div>
 </script>
