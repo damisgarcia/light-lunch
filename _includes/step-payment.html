@@ -1,0 +1,33 @@
+<script type="text/ng-template" id="step/payment.html">
+  <h2>Informações de Pagamento</h2>
+  <hr>
+  <form role="form">
+    <br style="clear:both">
+    <div class="form-group">
+      <div class="radio">
+        <label>
+          <input type="radio" name="money">Dinheiro
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="credit">Cartão de Crédito
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="debt"> Cartão Débito
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="voucher"> Voucher
+        </label>
+      </div>
+    </div>
+     <div class="form-group">
+       <textarea class="form-control" type="textarea" id="more" placeholder="Informações Adicionais" maxlength="140" rows="7"></textarea>
+     </div>
+    <a ui-sref="order-address" class="btn btn-default">Voltar</a>
+    <a ui-sref="order-submit" class="btn btn-success">Próximo</a>
+</script>

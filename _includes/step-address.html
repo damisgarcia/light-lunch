@@ -1,0 +1,23 @@
+<script type="text/ng-template" id="step/address.html">
+  <h2>Dados de Endereço</h2>
+  <form role="form">
+    <br style="clear:both">
+    <div class="form-group">
+       <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
+     </div>
+     <div class="form-group">
+       <input type="text" class="form-control" id="email" name="email" placeholder="Email" required>
+     </div>
+     <div class="form-group">
+       <input type="text" class="form-control" id="mobile" name="mobile" placeholder="Mobile Number" required>
+     </div>
+     <div class="form-group">
+       <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
+     </div>
+     <div class="form-group">
+       <textarea class="form-control" type="textarea" id="more" placeholder="Informações Adicionais" maxlength="140" rows="7"></textarea>
+     </div>
+    <a ui-sref="order-new" class="btn btn-default">Voltar</a>
+    <a ui-sref="order-payment" class="btn btn-success">Próximo</a>
+  </form>
+</script>

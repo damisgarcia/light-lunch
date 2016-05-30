@@ -6,13 +6,13 @@
 @import "bootstrap-sprockets";
 
 // Bootswatch Theme
-@import "bootswatch/slate/variables";
+@import "bootswatch/flatly/variables";
 
 @import "bootstrap";
 @import "flexboxgrid";
 @import "angular-spinkit";
 
-@import "bootswatch/slate/bootswatch";
+@import "bootswatch/flatly/bootswatch";
 
 
 // Site
@@ -21,3 +21,4 @@
 @import "layout";
 @import "spinner";
 @import "profile";
+@import "timeline";

@@ -2,7 +2,7 @@
 # @controller AppCtrl
 ###
 
-AppCtrl = ($firebaseObject, Connection, $GoogleAuthProvider, $timeout)->
+AppCtrl = (Order, $firebaseObject, Connection, $GoogleAuthProvider, $timeout)->
   ###
   # @private
   ###
@@ -31,10 +31,10 @@ AppCtrl = ($firebaseObject, Connection, $GoogleAuthProvider, $timeout)->
   #...
 
   window.onload = ->
-    $timeout application_timeout, 1300
+    $timeout application_timeout, 200
 
   self
 
 
-AppCtrl.$inject = ['$firebaseObject', 'Connection','$GoogleAuthProvider', '$timeout']
+AppCtrl.$inject = ['Order', '$firebaseObject', 'Connection','$GoogleAuthProvider', '$timeout']
 angular.module('lightLuchApp').controller 'AppCtrl', AppCtrl

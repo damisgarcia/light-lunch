@@ -10,3 +10,8 @@
     @extend .col-md-9;
   }
 }
+
+.dropdown-menu.profile-popover{
+  padding: 12px;
+  min-width: 320px !important;
+}

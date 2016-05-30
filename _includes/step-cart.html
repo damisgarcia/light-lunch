@@ -1,0 +1,20 @@
+<script type="text/ng-template" id="step/cart.html">
+  <!-- Plates -->
+  <div class="row">
+    <div class="col-md-6" ng-repeat="plate in today.plates">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <img ng-src="{{'plate.picture'| angular}}" class="img-responsive">
+          <h4>
+            {{"plate.title" | angular}} <br>
+            <small>{{"plate.info" | angular}}<small>
+          </h4>
+          <h3>
+            {{"plate.price | currency: 'R$'" | angular}}
+            <button class="btn btn-default btn-sm pull-right" ng-click="today.add(plate)">Adicionar no Carrinho</button>
+          </h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</script>

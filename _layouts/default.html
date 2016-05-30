@@ -8,9 +8,24 @@
 
 
     <fading-circle-spinner ng-hide="app.loaded"></fading-circle-spinner>
-
-    <div class="container ng-hide" ng-show="app.loaded">
-      {{ content }}
+    <div class="row">
+      <div class="col-md-9 right-xs">
+        <div class="container ng-hide" ng-show="app.loaded">
+          {{ content }}
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="col-xs-12 margin-bottom" ng-repeat="{{'product in $order.cart'}}">
+          <div class="row well">
+            <div class='col-xs-3'>
+              <img ng-src="{{'product.picture'| angular}}" class="img-responsive">
+            </div>
+            <div class='col-xs-9'>
+              <h4>{{'product.title'|angular}}</h4>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     {% include footer.html %}
